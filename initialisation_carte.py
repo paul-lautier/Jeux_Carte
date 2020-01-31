@@ -1,16 +1,48 @@
 import json
 
 
-def cree_carte(carte_id):
 
+def get_dmg():
+    
     with open('data.json') as fichier:
         data = json.load(fichier)
     
 
-    for carte in data[carte_id]:
-        print(carte)
+    for carte in data['cartes']:
+        print(carte['dmg_monstre'])
+
+
+
+def get_hp():
+    
+    with open('data.json') as fichier:
+        data = json.load(fichier)
+    
+
+    for carte in data['cartes']:
+        print(carte['hp_monstre'])
+
+
+def get_name_monstre():
+    
+    with open('data.json') as fichier:
+        data = json.load(fichier)
+    
+
+    for carte in data['cartes']:
+        print(carte['name_monstre'])
+
+
+def get_hp_4invoc():
+    def get_dmg():
+    
+    with open('data.json') as fichier:
+        data = json.load(fichier)
+    
+
+    for carte in data['cartes']:
+        print(carte['hp_4invoc'])
 
 
 
 
-# cree_carte("2")
