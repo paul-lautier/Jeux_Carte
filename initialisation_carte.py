@@ -34,7 +34,6 @@ def get_name_monstre():
 
 
 def get_hp_4invoc():
-    def get_dmg():
     
     with open('data.json') as fichier:
         data = json.load(fichier)
@@ -42,7 +41,4 @@ def get_hp_4invoc():
 
     for carte in data['cartes']:
         print(carte['hp_4invoc'])
-
-
-
 

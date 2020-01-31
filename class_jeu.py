@@ -1,4 +1,5 @@
-
+from initialisation_carte import *
+import json
 
 class joueur():
     def __init__(self, nom_invocateur):
@@ -16,20 +17,23 @@ class joueur():
 
 
 class carte():
-    def __init__(self, carte_id):
-        self.dmg_monstre = dmg_monstre
-        self.hp_monstre = hp_monstre
-        self.hp_4invoc = hp_4invoc
-        self.nom_monstre = name_monstre
-        self.heal_monstre = heal_monstre
+    def __init__(self,):
+        self.dmg_monstre = get_dmg()
+        self.hp_monstre = get_hp()
+        self.hp_4invoc = get_hp_4invoc()
+        self.nom_monstre = get_name_monstre()
+        
     
 
     def attack_player(self,nom_monstre):
         self.hp_invocateur -= dmg_monstre
 
     def attack_monstre(self,nom_monstre):
-        dmg_monstre -= hp_monstre
+        self.dmg_monstre -= hp_monstre
     
 
-    
+def test():
+    dragon = carte()
+    print (dragon)
 
+test()
