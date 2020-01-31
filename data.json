@@ -1,8 +1,9 @@
 {
-    "1":[
+    "1":
+    [
 
         {
-        "dmg_monstre" : 1,
+        "dmg_monstre" : "1",
         "hp_monstre" : 1,
         "name_monstre" : "test",
         "hp_4invoc" : 1
@@ -10,12 +11,13 @@
         
        
     ],
-    "2":[
+    "2":
+    [
 
         {
         "dmg_monstre" : 1,
         "hp_monstre" : 1,
-        "name_monstre" : "test",
+        "name_monstre" : "test2",
         "hp_4invoc" : 1
         }
         
@@ -26,7 +28,7 @@
         {
         "dmg_monstre" : 1,
         "hp_monstre" : 1,
-        "name_monstre" : "test",
+        "name_monstre" : "test3",
         "hp_4invoc" : 1
         }
         
@@ -37,7 +39,7 @@
         {
         "dmg_monstre" : 1,
         "hp_monstre" : 1,
-        "name_monstre" : "test",
+        "name_monstre" : "test4",
         "hp_4invoc" : 1
         }
         
