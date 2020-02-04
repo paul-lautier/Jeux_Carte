@@ -1,17 +1,24 @@
 import pygame
+import matplotlib
 
 blanc = (255,255,255)
 
 pygame.init()
 
-ecranH = 500
-ecranL = 500
+ecranH = 1000
+ecranL = 1700
 
 carteH = 50
 carteL = 50
 
 ecran = pygame.display.set_mode((ecranL,ecranH))
 pygame.display.set_caption("coeur de pierre")
+timer = pygame.time.Clock()
+
+
+
+
+
 
 
 game_over = False

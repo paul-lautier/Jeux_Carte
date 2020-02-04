@@ -40,3 +40,13 @@ def get_hp_4invoc(id_carte):
     for carte in data[id_carte]:
         return(carte['hp_4invoc'])
 
+
+def get_sprite(id_carte):
+        
+    with open('data.json') as fichier:
+        data = json.load(fichier)
+    
+
+    for carte in data[id_carte]:
+        return(carte['sprite_path'])
+

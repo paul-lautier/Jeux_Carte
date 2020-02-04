@@ -7,6 +7,7 @@ class joueur():
         self.nom_invocateur = nom_invocateur
         self.heal_invocateur = heal_invocateur
         self.heal_point = heal_point
+        
 
     def invoc(self,invocateur):
         self.hp_invocateur -= hp_4invoc
@@ -22,6 +23,7 @@ class carte():
         self.hp_monstre = get_hp("1")
         self.hp_4invoc = get_hp_4invoc("2")
         self.name_monstre = get_name_monstre("2")
+        self.sprite_path = get_sprite("2")
         
     
     # fonction d'attaque de monstre sur joueur :
@@ -39,5 +41,6 @@ def test():
     print("name ",dragon.name_monstre)
     print("for invoc ",dragon.hp_4invoc)
     print("hp ",dragon.hp_monstre)
+    print("sprite",dragon.sprite_path)
 
 test()
