@@ -1,13 +1,12 @@
 import json
 
 
-
+# fonction pour récuperer les infos des cartes en fonction de leur ID :
 def get_dmg(id_carte):
     
     with open('data.json') as fichier:
         data = json.load(fichier)
     
-
     for carte in data[id_carte]:
         return(carte['dmg_monstre'])
 

@@ -24,15 +24,20 @@ class carte():
         self.name_monstre = get_name_monstre("2")
         
     
-
+    # fonction d'attaque de monstre sur joueur :
     def attack_player(self,nom_monstre):
         self.hp_invocateur -= dmg_monstre
+
+    # fonction d'attaque de monstre sur monstre :
     def attack_monstre(self,nom_monstre):
         self.dmg_monstre -= hp_monstre
 
-
+# fonction de test de print de carte
 def test():
     dragon = carte()
-    print(dragon.dmg_monstre)
+    print("dmg ",dragon.dmg_monstre)
+    print("name ",dragon.name_monstre)
+    print("for invoc ",dragon.hp_4invoc)
+    print("hp ",dragon.hp_monstre)
 
 test()

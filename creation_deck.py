@@ -1,7 +1,11 @@
 deck_joueur1 = []
 deck_joueur2 = []
 
+
+# variable de test : 
 carte = "1"
+
+# vérification de la validité du deck 
 deck_verif = False
 
 
@@ -18,7 +22,9 @@ def cree_deck():
 
 
 
-cree_deck()#test
+# cree_deck()
 
-print(deck_joueur1)
-print(deck_joueur2)
+
+# # print des deck pour test
+# print(deck_joueur1)
+# print(deck_joueur2)
