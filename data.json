@@ -2,10 +2,10 @@
 
     "1":[
             {
-            "dmg_monstre" : 6,
-            "hp_monstre" : 5,
+            "dmg_monstre" : "6",
+            "hp_monstre" : "5",
             "name_monstre" : "guerrier1",
-            "hp_4invoc" : 5,
+            "hp_4invoc" : "5",
             "sprite_path":"/sprites_cartes/1.png"
             }],
     "2":[

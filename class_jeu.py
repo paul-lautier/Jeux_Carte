@@ -17,13 +17,20 @@ class joueur():
     
 
 
+
+
+
+
+
+
 class carte():
-    def __init__(self):
-        self.dmg_monstre = get_dmg("1")
-        self.hp_monstre = get_hp("1")
-        self.hp_4invoc = get_hp_4invoc("2")
-        self.name_monstre = get_name_monstre("2")
-        self.sprite_path = get_sprite("2")
+    def __init__(self,dmg_monstre,hp_monstre,hp_4invoc,name_monstre):
+        self.dmg_monstre = dmg_monstre
+        self.hp_monstre = hp_monstre
+        self.hp_4invoc = hp_4invoc
+        self.name_monstre = name_monstre
+
+
         
     
     # fonction d'attaque de monstre sur joueur :

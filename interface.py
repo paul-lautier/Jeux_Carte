@@ -8,20 +8,22 @@ pygame.init()
 ecranH = 1000
 ecranL = 1700
 
-carteH = 50
-carteL = 50
+carteH = 100
+carteL = 80
 
 ecran = pygame.display.set_mode((ecranL,ecranH))
 pygame.display.set_caption("coeur de pierre")
+
+
 timer = pygame.time.Clock()
-
-
-
-
-
-
-
 game_over = False
+
+
+
+
+
+
+
 
 while not game_over :
     for event in pygame.event.get():

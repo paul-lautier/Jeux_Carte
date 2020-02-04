@@ -1,39 +1,42 @@
 from initialisation_carte import *
 deck_joueur1 = []
 deck_joueur2 = []
+deck_complet = []
 
 
 class carte():
-    def __init__(self,id_carte):
-        self.dmg_monstre = get_dmg(id_carte)
-        self.hp_monstre = get_hp(id_carte)
-        self.hp_4invoc = get_hp_4invoc(id_carte)
-        self.name_monstre = get_name_monstre(id_carte)
-        # self.sprite_path = get_sprite("1")
+    def __init__(self,dmg_monstre,hp_monstre,hp_4invoc,name_monstre):
+        self.dmg_monstre = dmg_monstre
+        self.hp_monstre = hp_monstre
+        self.hp_4invoc = hp_4invoc
+        self.name_monstre = name_monstre
+
+    def __str__(self):
+        return ""
 
 
-# variable de test : 
-
-
-# vérification de la validité du deck 
-deck_verif = False
 
 
 
 
 def cree_carte(id_carte):
-    pass
+     with open('data.json') as fichier:
+        data = json.load(fichier)
+        for dmg_monstre in data:
+            for hp_monstre in data:
+                for name_monstre in data:
+                    for hp_4invoc in data:
+                        deck_complet.append(carte(dmg_monstre,hp_monstre,name_monstre,hp_4invoc))
 
+    
+     
 
 
 
 def ajouter_au_deck():
+    deck_joueur1 = deck_complet
+    deck_joueur2 = deck_complet
 
-    while len(deck_joueur1) < 20 and len(deck_joueur2) < 20:
-        deck_joueur1.append(carte)
-        deck_joueur2.append(carte)
-    if len(deck_joueur1) == 20 and len(deck_joueur2) == 20:
-        deck_verif = True
 
 
 def melange_deck(deck_joueur1,deck_joueur2):
@@ -47,7 +50,7 @@ def test_deck():
     print(len(deck_joueur2))
 
 
-cree_carte()
+cree_carte("1")
 ajouter_au_deck()
 test_deck()
 
