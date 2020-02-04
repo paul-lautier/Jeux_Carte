@@ -1,14 +1,21 @@
 {
 
-    "cartes":[
-        {
-            "carte_id" : 1,
-            "dmg_monstre" : 5,
+    "1":[
+            {
+            "dmg_monstre" : 6,
             "hp_monstre" : 5,
             "name_monstre" : "guerrier",
             "hp_4invoc" : 5
+            }],
+    "2":[
+            {   
+            "dmg_monstre" : 8,
+            "hp_monstre" : 4,
+            "name_monstre" : "pigeon",
+            "hp_4invoc" : 4
             }
-    ]
+        ]
+    
 
 
     

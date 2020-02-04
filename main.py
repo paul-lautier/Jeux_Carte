@@ -6,5 +6,5 @@ from interface import *
 
 
 
-def main():
+def main(deck1,deck2):
 pass

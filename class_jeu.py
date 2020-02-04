@@ -18,10 +18,10 @@ class joueur():
 
 class carte():
     def __init__(self):
-        self.dmg_monstre = get_dmg(1)
-        self.hp_monstre = get_hp(1)
-        self.hp_4invoc = get_hp_4invoc(1)
-        self.name_monstre = get_name_monstre(1)
+        self.dmg_monstre = get_dmg("1")
+        self.hp_monstre = get_hp("1")
+        self.hp_4invoc = get_hp_4invoc("2")
+        self.name_monstre = get_name_monstre("2")
         
     
 
@@ -33,6 +33,6 @@ class carte():
 
 def test():
     dragon = carte()
-    print(dragon.hp_monstre)
+    print(dragon.dmg_monstre)
 
 test()
