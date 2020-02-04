@@ -4,19 +4,166 @@
             {
             "dmg_monstre" : 6,
             "hp_monstre" : 5,
-            "name_monstre" : "guerrier",
-            "hp_4invoc" : 5
+            "name_monstre" : "guerrier1",
+            "hp_4invoc" : 5,
+            "sprite_path":"/sprites_cartes/1.png"
             }],
     "2":[
             {   
             "dmg_monstre" : 8,
             "hp_monstre" : 4,
-            "name_monstre" : "pigeon",
-            "hp_4invoc" : 4
+            "name_monstre" : "guerrier2",
+            "hp_4invoc" : 4,
+            "sprite_path":"/sprites_cartes/2.png"
             }
-        ]
-    
+        ],
+    "3":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier3",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/3.png"
+        }],
+    "4":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier4",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/4.png"
+        }],
+    "5":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier5",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/5.png"
+        }],
+    "6":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier6",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/6.png"
+        }],
+    "7":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier7",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/7.png"
+        }],
+    "8":[
+        {   
+        "dmg_monstre" : 8,
+        "hp_monstre" : 4,
+        "name_monstre" : "pigeon8",
+        "hp_4invoc" : 4,
+        "sprite_path":"/sprites_cartes/8.png"
+        }
+    ],
+    "9":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier9",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/9.png"
+        }],
+    "10":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier10",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/10.png"
+        }],
+    "11":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier11",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/11.png"
+        }],
+    "12":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier12",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/12.png"
+        }],
 
+    "13":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier13",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/13.png"
+        }],
+    "14":[
+        {   
+        "dmg_monstre" : 8,
+        "hp_monstre" : 4,
+        "name_monstre" : "pigeon14",
+        "hp_4invoc" : 4,
+        "sprite_path":"/sprites_cartes/14.png"
+        }
+        ],
+    "15":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier15",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/15.png"
+        }],
+    "16":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier16",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/16.png"
+        }],
+    "17":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier17",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/17.png"
+        }],
+    "18":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier18",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/18.png"
+        }],
+    "19":[
+        {
+        "dmg_monstre" : 6,
+        "hp_monstre" : 5,
+        "name_monstre" : "guerrier19",
+        "hp_4invoc" : 5,
+        "sprite_path":"/sprites_cartes/19.png"
+        }],
+    "20":[
+        {   
+        "dmg_monstre" : 8,
+        "hp_monstre" : 4,
+        "name_monstre" : "pigeon20",
+        "hp_4invoc" : 4,
+        "sprite_path":"/sprites_cartes/20.png"
+        }
+    ]
 
-    
 }
