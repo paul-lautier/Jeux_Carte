@@ -4,29 +4,36 @@ deck_joueur2 = []
 deck_complet = []
 
 
-class carte():
+class Carte():
     def __init__(self,dmg_monstre,hp_monstre,hp_4invoc,name_monstre):
         self.dmg_monstre = dmg_monstre
         self.hp_monstre = hp_monstre
         self.hp_4invoc = hp_4invoc
         self.name_monstre = name_monstre
 
-    def __str__(self):
-        return ""
+    def __s__(self):
+        return "{}".format(self.name_monstre)
 
 
 
 
 
 
-def cree_carte(id_carte):
+def cree_carte():
+    deck = []
      with open('data.json') as fichier:
         data = json.load(fichier)
-        for dmg_monstre in data:
-            for hp_monstre in data:
-                for name_monstre in data:
-                    for hp_4invoc in data:
-                        deck_complet.append(carte(dmg_monstre,hp_monstre,name_monstre,hp_4invoc))
+        for card_id, card_data in data.items():
+            carte = Carte(
+                **card_data
+                # card_data['dmg_monstre'],
+                # card_data['hp_monstre'],
+                # card_data['name_monstre'],
+                # card_data['hp_4invoc'],
+                # card_data['sprite_path']
+
+            )
+            
 
     
      
@@ -34,8 +41,9 @@ def cree_carte(id_carte):
 
 
 def ajouter_au_deck():
-    deck_joueur1 = deck_complet
-    deck_joueur2 = deck_complet
+    for i in range (20) :
+        deck_joueur1.append(deck_complet)
+        deck_joueur2.append(deck_complet)
 
 
 
@@ -46,11 +54,13 @@ def melange_deck(deck_joueur1,deck_joueur2):
 def test_deck():
     print(deck_joueur1)
     print(len(deck_joueur1))
-    print(deck_joueur2)
+    # print(deck_joueur2)
     print(len(deck_joueur2))
+    # print(deck_complet)
+    # print(len(deck_complet))
 
 
-cree_carte("1")
+cree_carte()
 ajouter_au_deck()
 test_deck()
 
