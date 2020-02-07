@@ -1,20 +1,20 @@
 {
 
     "1": {
-            "dmg_monstre" : "6",
-            "hp_monstre" : "5",
-            "name_monstre" : "guerrier1",
-            "hp_4invoc" : "5",
-            "sprite_path":"/sprites_cartes/1.png"
+        "dmg_monstre" : "6",
+        "hp_monstre" : "5",
+        "name_monstre" : "guerrier1",
+        "hp_4invoc" : "5",
+        "sprite_path":"/sprites_cartes/1.png"
         },
     "2":
-            {   
-            "dmg_monstre" : 8,
-            "hp_monstre" : 4,
-            "name_monstre" : "guerrier2",
-            "hp_4invoc" : 4,
-            "sprite_path":"/sprites_cartes/2.png"
-            }
+        {   
+        "dmg_monstre" : 8,
+        "hp_monstre" : 4,
+        "name_monstre" : "guerrier2",
+        "hp_4invoc" : 4,
+        "sprite_path":"/sprites_cartes/2.png"
+        }
         ,
     "3":
         {

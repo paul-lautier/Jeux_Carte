@@ -5,9 +5,8 @@ import matplotlib
 def cree_ecran():
     pygame.init()
 
-    blanc = (255,255,255)
+    vert = (107,142,35)
 
-    
 
     ecranH = 1000
     ecranL = 1700
@@ -16,20 +15,31 @@ def cree_ecran():
     carteL = 80
 
     ecran = pygame.display.set_mode((ecranL,ecranH))
-    pygame.display.set_caption("coeur de pierre")
+    pygame.display.set_caption("logo/logo.png")
+
+    test_sprite = pygame.image.load('sprite_cartes/1.png')
+    testX = 400
+    testY = 400
+
+    def test():
+        ecran.blit(test_sprite, (testX,testY))
 
 
     timer = pygame.time.Clock()
     game_over = False
 
-
+    ecran.fill(vert)
 
     while not game_over :
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 game_over = True
 
-        ecran.fill(blanc)
+        
+
+
+
+        test()
         pygame.display.update()
 
     
@@ -39,3 +49,4 @@ def cree_ecran():
 
 
 
+cree_ecran()
