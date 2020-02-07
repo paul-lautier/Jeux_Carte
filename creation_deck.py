@@ -1,24 +1,6 @@
-
+from class_jeu import *
 import random
 import json
-
-
-
-class Carte():
-    def __init__(self,dmg_monstre,hp_monstre,hp_4invoc,name_monstre ,sprite_path):
-        self.dmg_monstre = dmg_monstre
-        self.hp_monstre = hp_monstre
-        self.hp_4invoc = hp_4invoc
-        self.name_monstre = name_monstre
-        self.sptite_path = sprite_path
-
-    def __repr__(self):
-        return "{}".format(self.name_monstre)
-
-
-
-
-
 
 def cree_deck():
     deck1 = []

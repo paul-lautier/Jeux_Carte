@@ -1,4 +1,4 @@
-from initialisation_carte import *
+
 import json
 
 class joueur():
@@ -17,22 +17,17 @@ class joueur():
     
 
 
-
-
-
-
-
-
-class carte():
-    def __init__(self,dmg_monstre,hp_monstre,hp_4invoc,name_monstre):
+class Carte():
+    def __init__(self,dmg_monstre,hp_monstre,hp_4invoc,name_monstre ,sprite_path):
         self.dmg_monstre = dmg_monstre
         self.hp_monstre = hp_monstre
         self.hp_4invoc = hp_4invoc
         self.name_monstre = name_monstre
+        self.sptite_path = sprite_path
 
-
-        
-    
+    def __repr__(self):
+        return "{}".format(self.name_monstre)
+   
     # fonction d'attaque de monstre sur joueur :
     def attack_player(self,nom_monstre):
         self.hp_invocateur -= dmg_monstre
@@ -41,13 +36,4 @@ class carte():
     def attack_monstre(self,nom_monstre):
         self.dmg_monstre -= hp_monstre
 
-# fonction de test de print de carte
-def test():
-    dragon = carte()
-    print("dmg ",dragon.dmg_monstre)
-    print("name ",dragon.name_monstre)
-    print("for invoc ",dragon.hp_4invoc)
-    print("hp ",dragon.hp_monstre)
-    print("sprite",dragon.sprite_path)
 
-test()
