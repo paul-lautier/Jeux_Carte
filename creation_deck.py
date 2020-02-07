@@ -32,5 +32,4 @@ def test_deck(deck1,deck2):
 
 
 
-cree_deck()
 

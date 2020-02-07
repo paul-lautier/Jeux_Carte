@@ -1,14 +1,14 @@
 import pygame 
 import json
 from creation_deck import *
-# from interface import * 
+from interface import * 
 
 
 
+def main():
+    cree_deck()
 
+    cree_ecran()
+    
 
-def main(deck1,deck2):
-    pass
-
-
-cree_deck()
+main()
