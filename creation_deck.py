@@ -13,6 +13,7 @@ def cree_deck():
             deck2.append(carte)
         melange_deck(deck1,deck2)
         test_deck(deck1,deck2)
+        
 
 
         
