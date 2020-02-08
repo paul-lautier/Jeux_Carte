@@ -1,6 +1,7 @@
 from class_jeu import *
 import random
 import json
+from fonction_jeu import *
 
 def cree_deck():
     deck1 = []
@@ -13,6 +14,7 @@ def cree_deck():
             deck2.append(carte)
         melange_deck(deck1,deck2)
         test_deck(deck1,deck2)
+        cree_main_joueur(deck1,deck2)
         
 
 
@@ -33,3 +35,4 @@ def test_deck(deck1,deck2):
 
 
 
+cree_deck()
