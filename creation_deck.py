@@ -13,11 +13,11 @@ def cree_deck():
             deck1.append(carte)
             deck2.append(carte)
         melange_deck(deck1,deck2)
-        test_deck(deck1,deck2)
+        # test_deck(deck1,deck2)
         cree_main_joueur(deck1,deck2)
-        test_deck(deck1,deck2)
+        # test_deck(deck1,deck2)
         cree_pioche(deck1,deck2)
-        test_deck(deck1,deck2)
+        # test_deck(deck1,deck2)
         
 
 

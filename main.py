@@ -7,8 +7,7 @@ from interface import *
 
 def main():
     cree_deck()
-
-    cree_ecran()
+    # cree_ecran()
 
     
 

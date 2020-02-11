@@ -18,8 +18,8 @@ def cree_ecran():
     pygame.display.set_caption("logo/logo.png")
 
     test_sprite = pygame.image.load('sprite_cartes/1.png')
-    testX = 400
-    testY = 400
+    testX = 250
+    testY = 750
 
     def test():
         ecran.blit(test_sprite, (testX,testY))
