@@ -2,10 +2,19 @@ import pygame
 import matplotlib
 
 
+def carte_to_sprite(name_monstre,sprite_path):
+    for i in range (20):
+        with open('data.json') as fichier:
+            data2 = json.load(fichier)
+            for carte_id, card_data2 in data2.items():
+                
+
+        
+
+
 def cree_ecran():
     pygame.init()
 
-    vert = (107,142,35)
 
 
     ecranH = 1000
@@ -28,7 +37,6 @@ def cree_ecran():
     timer = pygame.time.Clock()
     game_over = False
 
-    ecran.fill(vert)
 
     while not game_over :
         for event in pygame.event.get():
@@ -36,7 +44,6 @@ def cree_ecran():
                 game_over = True
 
         
-
 
 
         test()
