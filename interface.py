@@ -6,7 +6,8 @@ def carte_to_sprite(name_monstre,sprite_path):
     for i in range (20):
         with open('data.json') as fichier:
             data2 = json.load(fichier)
-            for carte_id, card_data2 in data2.items():
+            for carte in main
+                pass
                 
 
         
@@ -45,12 +46,12 @@ def cree_ecran():
 
         
 
-
+        
         test()
         pygame.display.update()
 
     
-
+ 
     pygame.quit()
     quit()
 
