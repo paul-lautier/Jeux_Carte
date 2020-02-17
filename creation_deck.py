@@ -2,6 +2,11 @@ from class_jeu import *
 import random
 import json
 
+
+
+'''
+CRÉATION DU DECK
+'''
 def cree_deck():
     deck1 = []
     deck2 = []
@@ -17,11 +22,9 @@ def cree_deck():
 
         cree_pioche(deck1,deck2)
 
-
-
-    
-        
-
+'''
+CRÉATION DE LA MAIN DU JOUEUR
+'''
 
 def cree_main_joueur(deck1,deck2):
     main1 = []
@@ -34,7 +37,9 @@ def cree_main_joueur(deck1,deck2):
     test_main(main1,main2)
 
 
-
+'''
+CRÉATION DE LA PIOCHE
+'''
 def cree_pioche(deck1,deck2):
     pioche1 = []
     pioche2 = []
@@ -47,9 +52,36 @@ def cree_pioche(deck1,deck2):
     return pioche1,pioche2
         
 
+
+
+        
+
+
+'''
+GESTION DES CARTES
+'''
 def melange_deck(deck1,deck2):
     random.shuffle(deck1)
     random.shuffle(deck2)
+
+def pioche(pioche_joueur,main_joueur):
+    pass
+
+def del_carte(main_joueur):
+    pass
+
+
+
+
+
+
+
+
+
+
+'''
+FONCTION DE TEST
+'''
 
 def test_deck(deck1,deck2):
     print("deck du joueur 1 : ",deck1)
@@ -59,14 +91,13 @@ def test_deck(deck1,deck2):
     print(len(deck2))
 
 
-
-
 def test_pioche(pioche1,pioche2):
     print("pioche du joueur 1 : ", pioche1)
     print(len(pioche1))
 
     print("pioche du joueur 2 : ",pioche2)
     print(len(pioche2))
+
 
 def test_main(main1,main2):
     print("main joueur 1 : ",main1)
