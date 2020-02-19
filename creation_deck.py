@@ -18,10 +18,12 @@ def cree_deck():
             deck2.append(carte)
         melange_deck(deck1,deck2)
 
-        main1, main2 = cree_main_joueur(deck1,deck2)
-        pioche1, pioche2 = cree_pioche(deck1,deck2)
+    main1, main2 = cree_main_joueur(deck1,deck2)
+    pioche1, pioche2 = cree_pioche(deck1,deck2)
 
-        return main1,pioche1,main2,pioche2
+    return main1,main2,pioche1,pioche2
+
+
 
 
 '''
@@ -68,12 +70,11 @@ def melange_deck(deck1,deck2):
     random.shuffle(deck2)
 
 def pioche(pioche_joueur,main_joueur):
-    pass
+    for une in range(1):
+        main_joueur.append(pioche_joueur.remove(une))
 
-def del_carte(main_joueur):
-    pass
-
-
+def del_carte(main_joueur,carte_rm):
+    main_joueur.remove(carte_rm)
 
 
 

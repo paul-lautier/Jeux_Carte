@@ -1,6 +1,5 @@
 import pygame
 import matplotlib
-from creation_deck import *
 
 carteH = 100
 carteL = 80
@@ -8,10 +7,10 @@ carteL = 80
 def path_to_sprite(main1,main2):
     for carte in main1:
         carte.sprite_path = pygame.image.load(str(carte) + ".png")   
-        largeur, hauteur = carteL, carteH 
+        largeur1, hauteur1 = carteL, carteH 
     for carte in main2:
         carte.sprite_path = pygame.image.load(str(carte) + ".png")   
-        largeur, hauteur = carteL, carteH 
+        largeur2, hauteur2 = carteL, carteH 
 
 
                 
@@ -19,7 +18,7 @@ def path_to_sprite(main1,main2):
         
 
 
-def cree_ecran():
+def cree_ecran(main1,pioche1,main2,pioche2):
     pygame.init()
 
 
@@ -56,8 +55,3 @@ def cree_ecran():
  
     pygame.quit()
     quit()
-
-
-cree_deck()
-path_to_sprite(main1,main2)
-cree_ecran()
