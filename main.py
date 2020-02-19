@@ -7,7 +7,8 @@ from interface import *
 
 def main():
     cree_deck()
-    cree_ecran()
+    # cree_ecran()
+    # load_card_images(main1,main2)
 
     
 

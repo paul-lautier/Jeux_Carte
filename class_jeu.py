@@ -1,7 +1,7 @@
 
 import json
 
-class joueur():
+class joueur(object):
     def __init__(self, nom_invocateur,main_joueur):
         self.hp_invocateur = 30
         self.nom_invocateur = nom_invocateur
@@ -18,7 +18,7 @@ class joueur():
     
 
 
-class Carte():
+class Carte(object):
     def __init__(self,dmg_monstre,hp_monstre,hp_4invoc,name_monstre ,sprite_path):
         self.dmg_monstre = dmg_monstre
         self.hp_monstre = hp_monstre
@@ -36,4 +36,3 @@ class Carte():
     # fonction d'attaque de monstre sur monstre :
     def attack_monstre(self,nom_monstre):
         self.dmg_monstre -= hp_monstre
-

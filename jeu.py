@@ -5,5 +5,12 @@ def moteur(pioche1,pioche2,main1,main2):
     '''
     tour = True
 
+    if tour == True:
+        pass
+
+
+
+    else:
+        pass
 
 

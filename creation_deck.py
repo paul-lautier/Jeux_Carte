@@ -18,9 +18,11 @@ def cree_deck():
             deck2.append(carte)
         melange_deck(deck1,deck2)
 
-        cree_main_joueur(deck1,deck2)
+        main1, main2 = cree_main_joueur(deck1,deck2)
+        pioche1, pioche2 = cree_pioche(deck1,deck2)
 
-        cree_pioche(deck1,deck2)
+        return main1,pioche1,main2,pioche2
+
 
 '''
 CRÉATION DE LA MAIN DU JOUEUR
@@ -35,6 +37,7 @@ def cree_main_joueur(deck1,deck2):
         main2.append(deck2.pop(a))
 
     test_main(main1,main2)
+    return main1,main2
 
 
 '''
@@ -74,11 +77,6 @@ def del_carte(main_joueur):
 
 
 
-
-
-
-
-
 '''
 FONCTION DE TEST
 '''
@@ -105,6 +103,3 @@ def test_main(main1,main2):
 
     print("main joueur 2 : ", main2)
     print(len(main2))
-
-
-cree_deck()

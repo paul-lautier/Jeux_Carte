@@ -1,13 +1,19 @@
 import pygame
 import matplotlib
+from creation_deck import *
+
+carteH = 100
+carteL = 80
+
+def path_to_sprite(main1,main2):
+    for carte in main1:
+        carte.sprite_path = pygame.image.load(str(carte) + ".png")   
+        largeur, hauteur = carteL, carteH 
+    for carte in main2:
+        carte.sprite_path = pygame.image.load(str(carte) + ".png")   
+        largeur, hauteur = carteL, carteH 
 
 
-def carte_to_sprite(name_monstre,sprite_path):
-    for i in range (20):
-        with open('data.json') as fichier:
-            data2 = json.load(fichier)
-            for carte in main
-                pass
                 
 
         
@@ -23,16 +29,14 @@ def cree_ecran():
 
     carteH = 100
     carteL = 80
-
+    
     ecran = pygame.display.set_mode((ecranL,ecranH))
     pygame.display.set_caption("logo/logo.png")
 
-    test_sprite = pygame.image.load('sprite_cartes/1.png')
+
     testX = 250
     testY = 750
 
-    def test():
-        ecran.blit(test_sprite, (testX,testY))
 
 
     timer = pygame.time.Clock()
@@ -46,8 +50,6 @@ def cree_ecran():
 
         
 
-        
-        test()
         pygame.display.update()
 
     
@@ -56,5 +58,6 @@ def cree_ecran():
     quit()
 
 
-
+cree_deck()
+path_to_sprite(main1,main2)
 cree_ecran()
