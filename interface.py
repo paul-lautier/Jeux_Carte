@@ -1,57 +1,37 @@
 import pygame
-import matplotlib
 
-carteH = 100
-carteL = 80
-
-def path_to_sprite(main1,main2):
-    for carte in main1:
-        carte.sprite_path = pygame.image.load(str(carte) + ".png")   
-        largeur1, hauteur1 = carteL, carteH 
-    for carte in main2:
-        carte.sprite_path = pygame.image.load(str(carte) + ".png")   
-        largeur2, hauteur2 = carteL, carteH 
+pygame.init()
 
 
-                
+ecran_hauteur = 800
+ecran_largeur = 800
 
-        
+ecran = pygame.display.set_mode((ecran_largeur,ecran_hauteur))
+
+startImage = pygame.image.load('logo/start.png')
+
+pygame.display.set_caption('test')
+
+timer = pygame.time.Clock()
+
+def start(x,y):
+    ecran.blit(startImage,(x,y))
+
+x = (ecran_largeur * 0.45)
+y = (ecran_hauteur * 0.8)
 
 
-def cree_ecran(main1,pioche1,main2,pioche2):
-    pygame.init()
 
+game_crash = False
 
-
-    ecranH = 1000
-    ecranL = 1700
-
-    carteH = 100
-    carteL = 80
+while not game_crash:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            game_crash = True
     
-    ecran = pygame.display.set_mode((ecranL,ecranH))
-    pygame.display.set_caption("logo/logo.png")
+    start(x,y)
+    pygame.display.update()
+    timer.tick(60)
 
-
-    testX = 250
-    testY = 750
-
-
-
-    timer = pygame.time.Clock()
-    game_over = False
-
-
-    while not game_over :
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                game_over = True
-
-        
-
-        pygame.display.update()
-
-    
- 
-    pygame.quit()
-    quit()
+pygame.quit()
+quit()
