@@ -18,10 +18,8 @@ def cree_deck():
             deck2.append(carte)
         melange_deck(deck1,deck2)
 
-    main1, main2 = cree_main_joueur(deck1,deck2)
-    pioche1, pioche2 = cree_pioche(deck1,deck2)
 
-    return main1,main2,pioche1,pioche2
+    return deck1,deck2
 
 
 

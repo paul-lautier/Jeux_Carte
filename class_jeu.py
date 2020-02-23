@@ -2,19 +2,19 @@
 import json
 
 class joueur(object):
-    def __init__(self, nom_invocateur,main_joueur):
+    def __init__(self, nom_invocateur,main_joueur,pioche_joueur):
         self.hp_invocateur = 30
+        self.heal_par_tour = 3
         self.nom_invocateur = nom_invocateur
-        self.heal_invocateur = heal_invocateur
-        self.heal_point = heal_point
         self.main_joueur= main_joueur
+        self.pioche_joueur = pioche_joueur
         
 
     def invoc(self,invocateur):
         self.hp_invocateur -= hp_4invoc
 
     def heal_invocateur(self,invocateur):
-        self.hp_invocateur += heal_point
+        self.hp_invocateur += heal_par_tour
     
 
 
