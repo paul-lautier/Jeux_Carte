@@ -1,8 +1,11 @@
 import pygame 
 import json
+import random
 from creation_deck import *
 from class_jeu import *
-import pygame
+
+
+
 
 
 '''
@@ -102,7 +105,7 @@ def game_menu():
                 
         gameDisplay.fill(blanc)
         largeText = pygame.font.SysFont("comicsansms",115)
-        TextSurf, TextRect = text_objects("A bit Racey", largeText)
+        TextSurf, TextRect = text_objects("Jeu De Cartes", largeText)
         TextRect.center = ((HAUTEUR/2),(LARGEUR/2))
         gameDisplay.blit(TextSurf, TextRect)
 
@@ -114,9 +117,29 @@ def game_menu():
         clock.tick(15)
 
 
+def game_screen():
+    game=True
+
+    while game:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                quit()
+
+
+
+
+
+
+
+    pygame.display.update()
+
+
 
 #boucle du jeu 
 def game_loop():
+
+    # game_screen()
 
     #vérif de début de jeu
     rules_ok = False
@@ -125,6 +148,17 @@ def game_loop():
     #tours des joueurs
     joueur1_tour = False
     joueur2_tour = False
+
+    #def des variables de cartes
+    card_on_board1=[]
+    card_on_board2=[]
+    dead_card=[]
+
+    #def des variables de jeu
+    pose_carte=False
+    passe_tour=False
+    attaque=False
+
 
 
     #import des decks + main + pioche des deux joueurs
@@ -151,21 +185,145 @@ def game_loop():
         if turn == 1:
             joueur1_tour = True
             joueur2_tour = False
-            print("\nle joueur 1 commence.")
+            print(str(joueur1.nom_invocateur),"commence")
         else:
             joueur1_tour = False
             joueur2_tour = True
-            print("\nle joueur 2 commence.")
+            print(str(joueur2.nom_invocateur),"commence")
 
 
         while (joueur1.hp_invocateur != 0 or joueur2.hp_invocateur != 0):
             if joueur1_tour:
-                pass
+                keys = pygame.key.get_pressed()
+                for event in pygame.event.get():
+        
+                    #choix de l'action a éffectuer ce tour
+                    if event.type == pygame.KEYDOWN:
+                        if event.key == pygame.K_q:
+                            pose_carte = True
+                            print("appuyez sur la touche numerique qui correspond au numéro de la carte pour la posé")
+
+                        if event.key == pygame.K_w:
+                            attaque = True
+                            print("appuyez sur la touche numerique qui correspond au numéro de la carte pour attaquer avec")
+
+                        if event.key == pygame.K_e:
+                            passe_tour = True
+                            print("vous avez passer votre tour")
+
+
+                if passe_tour :
+                    joueur1_tour = False
+                    joueur2_tour = True
+
+                        
+
+                    
+                if attaque and len(card_on_board1) != 0:
+                    if event.type == pygame.KEYDOWN:
+                        if event.key == pygame.K_1:
+                            card_on_board1[0].attack_monstre( )
+
+                    pass     
+                        
+                        
+
+
+                if pose_carte == True and len(card_on_board1) < 5:
+                    if event.type == pygame.KEYDOWN :
+
+                        if event.key == pygame.K_1:
+                            card_on_board1.append(main1.pop(0))
+                            print(card_on_board2)
+                            pose_carte=False
+
+                        if event.key == pygame.K_2:
+                            card_on_board1.append(main1.pop(1))
+                            pose_carte=False
+
+                        if event.key == pygame.K_3:
+                            card_on_board1.append(main1.pop(2))
+                            pose_carte=False
+
+                        if event.key == pygame.K_4:
+                            card_on_board1.append(main1.pop(3))
+                            pose_carte=False
+
+                        if event.key == pygame.K_5:
+                            card_on_board1.append(main1.pop(4))
+                            pose_carte=False
+                    
+
+
+
+
+                
+
+   
+
+
+            if joueur2_tour:
+
+                keys = pygame.key.get_pressed()
+                for event in pygame.event.get():
+
+                    if event.type == pygame.KEYDOWN:
+                        if event.key == pygame.K_q:
+                            pose_carte = True
+                            print("appuyez sur la touche numerique qui correspond au numéro de la carte pour la posé")
+
+                        if event.key == pygame.K_w:
+                            attaque = True
+                            print("appuyez sur la touche numerique qui correspond au numéro de la carte pour attaquer avec")
+
+                        if event.key == pygame.K_e:
+                            passe_tour = True
+                            print("vous avez passer votre tour")
+                            
+
+
+                if passe_tour:
+                    joueur1_tour = True
+                    joueur2_tour = False
+                    
+
+
+                if pose_carte == True and len(card_on_board2)<5:
+                    
+                        if event.type == pygame.KEYDOWN :
+                            if event.key == pygame.K_1:
+                                card_on_board2.append(main2.pop(0))
+                                print(card_on_board2)
+                                pose_carte=False
+
+                            if event.key == pygame.K_2:
+                                card_on_board2.append(main2.pop(1))
+                                pose_carte=False
+
+                            if event.key == pygame.K_3:
+                                card_on_board2.append(main2.pop(2))
+                                pose_carte=False
+
+                            if event.key == pygame.K_4:
+                                card_on_board2.append(main2.pop(3))
+                                pose_carte=False
+
+                            if event.key == pygame.K_5:
+                                card_on_board2.append(main2.pop(4))
+                                pose_carte=False
+                        else:
+                            print('votre terrain de jeu est déjà remplie')
+
+
+                    
+                
+
+                        
+
+
 
 
     
-
-
 
     
 

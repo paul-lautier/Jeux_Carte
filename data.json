@@ -151,7 +151,7 @@
         {
         "dmg_monstre" : 2,
         "hp_monstre" : 2,
-        "name_monstre" : "vipélierre",
+        "name_monstre" : "vipelierre",
         "hp_4invoc" : 1,
         "sprite_path":"/sprites_cartes/19.png"
         },
