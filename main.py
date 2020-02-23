@@ -160,7 +160,7 @@ def game_loop():
 
         while (joueur1.hp_invocateur != 0 or joueur2.hp_invocateur != 0):
             if joueur1_tour:
-                
+                pass
 
 
     
