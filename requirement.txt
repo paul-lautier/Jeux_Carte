@@ -1,0 +1,5 @@
+pour pouvoir lancer le projet il faut :
+
+import pygame
+import random 
+improt json
